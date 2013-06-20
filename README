@@ -1,0 +1,11 @@
+NAME
+    libsvclogpp - libsyslogpp extension
+
+SYNOPSIS
+    svclog.init_subsystems( N_max );
+    svclog.setmask( N_0, LOG_MASK( LOG_ERR ), "msg prefix" );
+    svclog( N_0, LOG_ERR ) << "message" << std::endl;
+
+AUTHORS
+    Document written by:
+    Yuri Dyatchenko admin@yurial.ru
