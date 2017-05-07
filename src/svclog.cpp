@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "svclog.hpp"
 
-std::vector<svclogbuf::subsystem> svclogbuf::m_subsystems;
+std::vector<svclogbuf::subsystem_data> svclogbuf::m_subsystems;
 
 svclog_t g_svclog;
 

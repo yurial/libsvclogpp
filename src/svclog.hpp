@@ -54,22 +54,22 @@ protected:
     {
     nosubsystem = -1
     };
-    
+
     enum
     {
     masknone = 0,
     maskall = -1
     };
 
-    struct subsystem
+    struct subsystem_data
     {
     int         m_mask;
     std::string m_prefix;
 
-    inline  subsystem();
+    inline  subsystem_data();
     };
 
-static std::vector<subsystem> m_subsystems;
+static std::vector<subsystem_data> m_subsystems;
 
                 int     m_subsystem;
                 int     m_prio;
@@ -113,7 +113,7 @@ inline  void            operator () (int prio, const char* fmt, ...) const;
 inline  void            operator () (int subsystem, int prio, const char* fmt, ...) const;
 };
 
-svclogbuf::subsystem::subsystem():
+svclogbuf::subsystem_data::subsystem_data():
     m_mask( maskall )
 {
 }
